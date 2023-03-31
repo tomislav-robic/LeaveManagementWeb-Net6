@@ -9,7 +9,7 @@
 <p>
     <a class="btn btn-success" asp-action="Create"> <i class="fa-solid fa-plus fa-sm"></i> Create New</a>
 </p>
-<table class="table">
+<table class="table table-dark">
     <thead>
         <tr>
             <th>
@@ -49,7 +49,7 @@
         $(function() {
             $('.table').DataTable();
 
-            $('.deleteBtn').click(function(e){
+            $(document).on('click', '.deleteBtn', function (e) {
                 swal({
                     title      : "Are you sure?",
                     text       : "Are you sure you want to delete this record?",
