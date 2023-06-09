@@ -44,7 +44,6 @@ app.UseSerilogRequestLogging();
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
-    app.UseExceptionHandler("/Home/Error");
 }
 else
 {

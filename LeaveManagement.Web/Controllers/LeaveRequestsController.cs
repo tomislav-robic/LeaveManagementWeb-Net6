@@ -34,16 +34,6 @@ namespace LeaveManagement.Web.Controllers
         // GET: LeaveRequests
         public async Task<IActionResult> Index()
         {
-            try
-            {
-                throw new Exception("Testing");
-            }
-            catch (Exception ex)
-            {
-                throw;
-                _logger.LogError(ex, $"Error Encountered By User: {this.User?.Identity?.Name}");
-                return RedirectToAction("Error", "Home");
-            }
             var model = await leaveRequestRepository.GetAdminLeaveRequestList();
             return View(model);
         }
