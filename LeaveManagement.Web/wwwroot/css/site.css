@@ -50,3 +50,8 @@ table, td, th {
     margin-left: 20px;
     font-size: large
 }
+
+tr.light-color > th,
+tr.light-color > td {
+    color: #FFFAF0 !important;
+}

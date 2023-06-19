@@ -18,8 +18,8 @@ namespace LeaveManagement.Data.Configurations.Entities
                     NormalizedEmail = "ADMIN@LOCALHOST.COM",
                     UserName = "admin@localhost.com",
                     NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                    Firstname = "System",
-                    Lastname = "Admin",
+                    FirstName = "System",
+                    LastName = "Admin",
                     PasswordHash = hasher.HashPassword(user: null, password: "Admin123!"),
                     EmailConfirmed = true
                 },
@@ -30,8 +30,8 @@ namespace LeaveManagement.Data.Configurations.Entities
                     NormalizedEmail = "USER@LOCALHOST.COM",
                     UserName = "user@localhost.com",
                     NormalizedUserName = "USER@LOCALHOST.COM",
-                    Firstname = "System",
-                    Lastname = "User",
+                    FirstName = "System",
+                    LastName = "User",
                     PasswordHash = hasher.HashPassword(null, "User123!"),
                     EmailConfirmed = true
                 }
